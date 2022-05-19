@@ -3,8 +3,6 @@
 <div align="center">
   <a href="https://imgur.com/oPD8MPh"><img src="https://i.imgur.com/oPD8MPh.png" width='40%' title="source: imgur.com" /></a>
 
-
-
   <h3 align="center">TIKETZ STARS</h3>
 
   <p align="center">
@@ -54,12 +52,12 @@ Eis o porque:
 
 ### Construido com
 
-principais frameworks/bibliotecas usadas para inicializar seu projeto
+Principais frameworks/bibliotecas usadas para inicializar seu projeto
 
-- [java.](https://www.java.com/pt-BR/download/)
-- [docker](https://www.docker.com/products/docker-desktop/)
-- [docker compose](https://www.docker.com/products/docker-desktop/)
-- [meaven](https://maven.apache.org/download.cgi/)
+- [Java](https://www.java.com/pt-BR/download/)
+- [Docker](https://www.docker.com/products/docker-desktop/)
+- [Docker Compose](https://www.docker.com/products/docker-desktop/)
+- [Meaven](https://maven.apache.org/download.cgi/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -67,31 +65,50 @@ principais frameworks/bibliotecas usadas para inicializar seu projeto
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Para podermos rodar o projeto, eh necessario seguir alguns passos, como instalacao do git e instalacao do docker.
 
-### Prerequisites
+## Pre-requisites
 
-This is an example of how to list things you need to use the software and how to install them.
+### Docker
 
-- npm
-  sh
-  npm install npm@latest -g
+Devido a otima documentacao encontrada no site oficial do [Docker](https://www.docker.com/), seguiremos o guia informado por eles.
+
+<b>Linux Based: </b>
+[Docker for Linux](https://docs.docker.com/engine/install/ubuntu/)
+</br>
+<b>Windows Based:</b>
+[Docker for Windows](https://docs.docker.com/desktop/windows/install/)
+
+---
+
+### Git
+
+#### Caso esteja em uma distribuição baseada em Windows.
+
+Siga o guia oficial do Git For Windows: [Git Windows](https://gitforwindows.org/)
+
+#### Caso esteja em uma distribuição baseada em Unix/Linux
+
+Verifique se o git ja veio instalado com: `git --version`.
+
+Caso nao esteja instalado, rode o comando a seguir: </br>
+<b>Ubuntu Based - </b>`sudo apt install git` </br>
+
+<b>Arch Linux Based - </b>`install git` </br>
+
+Para outras versoes, siga o guia oficial:
+[Git Linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+---
 
 ### Installation
 
-Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services.
+Apos garantir que o Git e o Docker estao instalados.
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   sh
-   git clone https://github.com/your_username_/Project-Name.git
-3. Install NPM packages
-   sh
-   npm install
-4. Enter your API in `config.js`
-   js
-   const API_KEY = 'ENTER YOUR API';
+1. Abra um terminal do git (git bash).
+2. Clone o repositorio
+   `git clone https://github.com/ucb-concorrente/projeto.git`
+3. Instalar o setup de desenvolvimento `./deploy.sh`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -126,7 +143,6 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
