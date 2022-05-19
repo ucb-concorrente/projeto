@@ -109,6 +109,7 @@ Apos garantir que o Git e o Docker estao instalados.
 2. Clone o repositorio
    `git clone https://github.com/ucb-concorrente/projeto.git`
 3. Instalar o setup de desenvolvimento `./deploy.sh`
+4. Verifique se o docker foi iniciado com sucesso: `docker ps`.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
