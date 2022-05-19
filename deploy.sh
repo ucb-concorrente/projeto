@@ -2,7 +2,7 @@
 
 
 echo "Limpando todas as instancias do docker, por favor, aceite."
-sudo docker system prune -a --volumes
+docker system prune -a --volumes
 
 clear
 
@@ -19,4 +19,5 @@ docker build -t ucb .
 docker-compose up -d --build 
 
 echo "Database iniciado com sucesso."
-sudo docker ps
+
+docker ps
