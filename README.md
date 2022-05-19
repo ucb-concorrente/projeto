@@ -3,6 +3,8 @@
 <div align="center">
   <a href="https://imgur.com/oPD8MPh"><img src="https://i.imgur.com/oPD8MPh.png" width='40%' title="source: imgur.com" /></a>
 
+
+
   <h3 align="center">TIKETZ STARS</h3>
 
   <p align="center">
