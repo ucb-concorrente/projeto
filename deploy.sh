@@ -19,5 +19,8 @@ docker build -t ucb .
 docker-compose up -d --build 
 
 echo "Database iniciado com sucesso."
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 docker ps
