@@ -5,11 +5,11 @@ export function HomeHeader(props) {
   const { title } = props;
 
   return (
-    <div className="container">
+    <header className="container">
       <div className="content">
         <img src={Logo} alt="Tickets Logo" />
         <h1>{title}</h1>
       </div>
-    </div>
+    </header>
   );
 }
