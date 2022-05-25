@@ -12,9 +12,10 @@ button {
 }
 
 #root {
-  max-width: 1020px;
+  background-color: #f7e3d6;
+  min-width: 100vw;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 0 20px 50px;
 }
 
 button {

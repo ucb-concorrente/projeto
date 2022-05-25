@@ -6,8 +6,10 @@ export function HomeHeader(props) {
 
   return (
     <div className="container">
-      <h1>{title}</h1>
-      <img src={Logo} alt="Tickets Logo" />
+      <div className="content">
+        <img src={Logo} alt="Tickets Logo" />
+        <h1>{title}</h1>
+      </div>
     </div>
   );
 }
