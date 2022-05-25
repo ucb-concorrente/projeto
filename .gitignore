@@ -1,3 +1,4 @@
 .vscode/settings.json
 docker/spring-mysql.jar
 target/spring-mysql-application-1.0-SNAPSHOT.jar
+docker/docker-compose.yaml
