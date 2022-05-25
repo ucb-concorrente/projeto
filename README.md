@@ -72,7 +72,7 @@ Para podermos rodar o projeto, eh necessario seguir alguns passos, como instalac
 
 ### Docker
 
-Devido a otima documentacao encontrada no site oficial do [Docker](https://www.docker.com/), seguiremos o guia informado por eles.
+Devido a otima documentacao encontrada no site oficial do [Docker](https://docs.docker.com/), seguiremos o guia informado por eles.
 
 <b>Linux Based: </b>
 [Docker for Linux](https://docs.docker.com/engine/install/ubuntu/)
