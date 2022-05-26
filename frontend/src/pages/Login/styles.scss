@@ -1,0 +1,90 @@
+.container {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 500px;
+    width: 500px;
+  }
+
+  .signUp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    button {
+      background-color: rgb(44, 42, 42);
+      width: 40%;
+      height: 5rem;
+      margin-right: 0.5rem;
+      border-radius: 0.8rem;
+      font-size: 1.5rem;
+
+      &:hover {
+        transition: background-color 0.4s;
+        background-color: rgb(63, 60, 60);
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+
+    p {
+      font-size: 1.563rem;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.loginForm-container {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-size: 6.25rem;
+    color: black;
+    margin-bottom: 2.5rem;
+  }
+
+  .input-box {
+    width: 800px;
+    height: 500px;
+    -webkit-box-shadow: -2px 9px 33px 11px rgba(0, 0, 0, 0.41);
+    box-shadow: -2px 9px 33px 11px rgba(0, 0, 0, 0.41);
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fae9dd;
+
+    button {
+      background-color: rgb(44, 42, 42);
+      height: 3.5rem;
+      margin-right: 0.5rem;
+      border-radius: 0.8rem;
+      font-size: 1.2rem;
+
+      &:hover {
+        transition: background-color 0.4s;
+        background-color: rgb(63, 60, 60);
+      }
+    }
+
+    input {
+      width: 20rem;
+    }
+  }
+}

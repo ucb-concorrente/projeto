@@ -5,6 +5,7 @@ export function Home() {
     <>
       <HomeHeader title="A melhor plataforma de ingresso de MPB" />
       <HomeContent />
+      
     </>
   );
 }
