@@ -64,11 +64,51 @@ Principais frameworks/bibliotecas usadas para inicializar seu projeto
 
 <!-- GETTING STARTED -->
 
-## Getting Started
+## Começando
 
-Para podermos rodar o projeto, eh necessario seguir alguns passos, como instalacao do git e instalacao do docker.
+Para podermos rodar o projeto, é necessário seguir alguns passos<br/>
+### INSTALANDO O GIT E O DOCKER <br/>
+Docker tutorial para windows : https://docs.docker.com/desktop/windows/install/<br/>
+Docker tutorial para unix : https://docs.docker.com/engine/install/ubuntu/ <br/>
+### Comandos : <br/>
+ ```sh
+ git clone https://github.com/ucb-concorrente/projeto.git npm install npm@latest -g
+  ```
+ ```sh
+ git checkout -b PPC-6-criar-documentacoes-de-desenvolvimento
+  ```
+Caso esteja em uma distribuição baseada em Unix/Linux. Verifique se o git ja veio instalado com :
+ ```sh
+ git --version.
+  ``` 
 
-## Pre-requisites
+Caso nao esteja instalado, rode o comando a seguir:
+```sh
+Ubuntu Based - sudo apt install git
+  ``` 
+```sh
+Arch - install git
+  ``` 
+
+
+Para outras versoes, siga o guia oficial : https://git-scm.com/book/en/v2/Getting-Started-Installing-Git <br/><br/>
+Agora com o docker e o git instalado, chegou a hora de instalar o setup do projeto
+```sh
+./deploy.sh
+  ```
+
+Após rodar o arquivo de setup do projeto, verifique se a instancia do docker esta rodando, utilizando:
+```sh
+docker ps
+  ```
+
+Caso retorne algo parecido com a imagem acima, significa que o projeto teve seu setup concluido com sucesso <br/>
+IMAGEM AQUI 
+
+
+
+
+## Pre-requisitos
 
 ### Docker
 
@@ -102,7 +142,7 @@ Para outras versoes, siga o guia oficial:
 
 ---
 
-### Installation
+### Instalação
 
 Apos garantir que o Git e o Docker estao instalados.
 
@@ -116,7 +156,7 @@ Apos garantir que o Git e o Docker estao instalados.
 
 <!-- USAGE EXAMPLES -->
 
-## Usage
+## Uso
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -126,7 +166,7 @@ For more examples, please refer to the [Documentation](https://example.com)
 
 <!-- ROADMAP -->
 
-## Roadmap
+## Roteiro
 
 - [x] Add Changelog
 - [x] Add back to top links
@@ -142,7 +182,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 <!-- CONTRIBUTING -->
 
-## Contributing
+## Contribuição
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
@@ -159,7 +199,7 @@ Don't forget to give the project a star! Thanks again!
 
 <!-- LICENSE -->
 
-## License
+## Licensa
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
@@ -167,17 +207,17 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 
-## Contact
+## Contato
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Grupo 3 programação concorrente e distribuida - 
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/ucb-concorrente/projeto](https://github.com/ucb-concorrente/projeto)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 
-## Acknowledgments
+## Confirmações
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
