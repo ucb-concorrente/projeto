@@ -16,7 +16,10 @@ export function LoginInformation() {
               textAlign: "center",
             }}
           >
-            <b> A melhor plataforma de ingressos de MPB</b>
+            <b>
+              A melhor plataforma de <br />
+              ingressos de MPB
+            </b>
           </p>
         </Box>
 
