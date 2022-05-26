@@ -8,10 +8,7 @@ export function Home() {
     </>
   );
 }
-<<<<<<< HEAD
 
 
 
 
-=======
->>>>>>> e56091b5b8536f24c69198a52d3a539fb8206e9e
