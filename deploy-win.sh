@@ -21,3 +21,9 @@ docker-compose up -d --build
 echo "Database iniciado com sucesso."
 
 docker ps
+
+echo "Instalando dependencias frontend."
+npm install yarn --global
+
+
+cd ../frontend && yarn && yarn start

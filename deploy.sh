@@ -7,7 +7,7 @@ sudo docker system prune -a --volumes
 clear
 
 echo "Instalando o maven e as dependencias."
-mvn clean install
+mvn install
 
 clear
 
@@ -20,5 +20,10 @@ sudo docker-compose up -d --build
 
 echo "Database iniciado com sucesso."
 
-docker ps
+sudo docker ps
 
+echo "Instalando dependencias frontend."
+npm install yarn --global
+
+
+cd ../frontend && yarn && yarn start
