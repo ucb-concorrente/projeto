@@ -120,7 +120,7 @@ export function HomeContent(props) {
             <div className="show-item">
               <div key={item.id} className="item">
                 <img src={item.foto?.link} alt={item.foto?.alt} />
-                
+
                 <h1>{item.name}</h1>
                 <hr
                   style={{
@@ -138,7 +138,10 @@ export function HomeContent(props) {
                 ))}
               </div>
             </div>
-            <HomeBuyButton />
+            <HomeBuyButton
+              eventName={item.name}
+              eventPicture={item.foto?.link}
+            />
           </div>
         ))}
       </div>
