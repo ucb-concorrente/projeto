@@ -14,7 +14,7 @@ services :
     expose:
       - "3306"
     ports :
-      - "3306:3306"
+      - "3305:3306"
     volumes:
       - "./scripts/schema.sql:/docker-entrypoint-initdb.d/1.sql"
       - "./scripts/data.sql:/docker-entrypoint-initdb.d/2.sql"
