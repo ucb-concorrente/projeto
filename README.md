@@ -5,6 +5,7 @@
 
   <h3 align="center">TIKETZ STARS</h3>
 
+  
   <p align="center">
     Sistema de venda de ingressos de eventos de MPB -> O MELHOR
     <br />
@@ -71,7 +72,7 @@ Para podermos rodar o projeto, eh necessario seguir alguns passos, como instalac
 
 ### Docker
 
-Devido a otima documentacao encontrada no site oficial do [Docker](https://www.docker.com/), seguiremos o guia informado por eles.
+Devido a otima documentacao encontrada no site oficial do [Docker](https://docs.docker.com/), seguiremos o guia informado por eles.
 
 <b>Linux Based: </b>
 [Docker for Linux](https://docs.docker.com/engine/install/ubuntu/)
@@ -107,7 +108,7 @@ Apos garantir que o Git e o Docker estao instalados.
 
 1. Abra um terminal do git (git bash).
 2. Clone o repositorio
-   `git clone https://github.com/ucb-concorrente/projeto.git`
+   `git clone https://github.com/ucb-concorrente/projeto.git && cd projeto`
 3. Instalar o setup de desenvolvimento `./deploy.sh`
 4. Verifique se o docker foi iniciado com sucesso: `docker ps`.
 

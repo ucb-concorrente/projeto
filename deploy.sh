@@ -20,4 +20,5 @@ sudo docker-compose up -d --build
 
 echo "Database iniciado com sucesso."
 
-sudo docker ps
+docker ps
+
