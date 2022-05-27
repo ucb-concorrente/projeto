@@ -1,5 +1,9 @@
 package com.anupama.sinha.dao;
 
 public class EntidadeBase {
-    public Integer getId();
+    private Integer id;
+
+    public Integer getId() {
+        return this.id;
+    };
 }
