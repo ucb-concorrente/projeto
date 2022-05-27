@@ -1,6 +1,6 @@
 import "./styles.scss";
 import { HomeBuyButton } from "./Button/HomeBuyButton";
-
+import Carousel from "carousel-react-rcdev";
 export function HomeContent(props) {
   const items = [
     {
@@ -88,6 +88,183 @@ export function HomeContent(props) {
         },
       ],
     },
+
+    {
+      id: "4",
+      name: "QUALQUER COISA",
+      foto: {
+        link: "#",
+        alt: "Qualquer coisa",
+      },
+      valor: [
+        {
+          tipo: "camarote",
+          valor: 400,
+        },
+        {
+          tipo: "pista",
+          valor: 200,
+        },
+        {
+          tipo: "open bar",
+          valor: 1000,
+        },
+      ],
+    },
+    {
+      id: "4",
+      name: "QUALQUER COISA",
+      foto: {
+        link: "#",
+        alt: "Qualquer coisa",
+      },
+      valor: [
+        {
+          tipo: "camarote",
+          valor: 400,
+        },
+        {
+          tipo: "pista",
+          valor: 200,
+        },
+        {
+          tipo: "open bar",
+          valor: 1000,
+        },
+      ],
+    },
+    {
+      id: "4",
+      name: "QUALQUER COISA",
+      foto: {
+        link: "#",
+        alt: "Qualquer coisa",
+      },
+      valor: [
+        {
+          tipo: "camarote",
+          valor: 400,
+        },
+        {
+          tipo: "pista",
+          valor: 200,
+        },
+        {
+          tipo: "open bar",
+          valor: 1000,
+        },
+      ],
+    },
+    {
+      id: "4",
+      name: "QUALQUER COISA",
+      foto: {
+        link: "#",
+        alt: "Qualquer coisa",
+      },
+      valor: [
+        {
+          tipo: "camarote",
+          valor: 400,
+        },
+        {
+          tipo: "pista",
+          valor: 200,
+        },
+        {
+          tipo: "open bar",
+          valor: 1000,
+        },
+      ],
+    },
+    {
+      id: "4",
+      name: "QUALQUER COISA",
+      foto: {
+        link: "#",
+        alt: "Qualquer coisa",
+      },
+      valor: [
+        {
+          tipo: "camarote",
+          valor: 400,
+        },
+        {
+          tipo: "pista",
+          valor: 200,
+        },
+        {
+          tipo: "open bar",
+          valor: 1000,
+        },
+      ],
+    },
+    {
+      id: "4",
+      name: "QUALQUER COISA",
+      foto: {
+        link: "#",
+        alt: "Qualquer coisa",
+      },
+      valor: [
+        {
+          tipo: "camarote",
+          valor: 400,
+        },
+        {
+          tipo: "pista",
+          valor: 200,
+        },
+        {
+          tipo: "open bar",
+          valor: 1000,
+        },
+      ],
+    },
+    {
+      id: "4",
+      name: "QUALQUER COISA",
+      foto: {
+        link: "#",
+        alt: "Qualquer coisa",
+      },
+      valor: [
+        {
+          tipo: "camarote",
+          valor: 400,
+        },
+        {
+          tipo: "pista",
+          valor: 200,
+        },
+        {
+          tipo: "open bar",
+          valor: 1000,
+        },
+      ],
+    },
+    {
+      id: "4",
+      name: "QUALQUER COISA",
+      foto: {
+        link: "#",
+        alt: "Qualquer coisa",
+      },
+      valor: [
+        {
+          tipo: "camarote",
+          valor: 400,
+        },
+        {
+          tipo: "pista",
+          valor: 200,
+        },
+        {
+          tipo: "open bar",
+          valor: 1000,
+        },
+      ],
+    },
     {
       id: "4",
       name: "QUALQUER COISA",
@@ -115,35 +292,37 @@ export function HomeContent(props) {
   return (
     <div className="shows-container">
       <div className="shows">
-        {items.map((item) => (
-          <div className="showItem-container">
-            <div className="show-item">
-              <div key={item.id} className="item">
-                <img src={item.foto?.link} alt={item.foto?.alt} />
+        <Carousel className="carousel" max_width={2500}>
+          {items.map((item) => (
+            <div className="showItem-container">
+              <div className="show-item">
+                <div key={item.id} className="item">
+                  <img src={item.foto?.link} alt={item.foto?.alt} />
 
-                <h1>{item.name}</h1>
-                <hr
-                  style={{
-                    height: 3,
-                    backgroundColor: "black",
-                  }}
-                />
-                {item.valor.map((v) => (
-                  <>
-                    <div className="ingressos">
-                      <h2>Tipo Ingresso: {v.tipo}</h2>
-                      <h2>Valor: {v.valor}</h2>
-                    </div>
-                  </>
-                ))}
+                  <h1>{item.name}</h1>
+                  <hr
+                    style={{
+                      height: 3,
+                      backgroundColor: "black",
+                    }}
+                  />
+                  {item.valor.map((v) => (
+                    <>
+                      <div className="ingressos">
+                        <h2>Tipo Ingresso: {v.tipo}</h2>
+                        <h2>Valor: {v.valor}</h2>
+                      </div>
+                    </>
+                  ))}
+                </div>
               </div>
+              <HomeBuyButton
+                eventName={item.name}
+                eventPicture={item.foto?.link}
+              />
             </div>
-            <HomeBuyButton
-              eventName={item.name}
-              eventPicture={item.foto?.link}
-            />
-          </div>
-        ))}
+          ))}
+        </Carousel>
       </div>
     </div>
   );

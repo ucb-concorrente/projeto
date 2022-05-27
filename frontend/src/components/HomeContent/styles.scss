@@ -4,12 +4,21 @@
   .shows {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+
+    .carousel{
+      height: 80rem;
+    }
     .showItem-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-end;
+
+      &:first-child{
+        margin-left: 4.5rem;
+      }
+
       .show-item {
         margin: 10rem 2rem 3rem 2rem;
         height: 300px;
