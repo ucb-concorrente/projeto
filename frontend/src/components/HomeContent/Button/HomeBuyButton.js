@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { Modal as MaterialModal, Box, TextField } from "@mui/material";
+import {
+  Modal as MaterialModal,
+  Box,
+  TextField,
+  CircularProgress,
+  Snackbar,
+  Alert,
+} from "@mui/material";
 import InputMask from "react-input-mask";
 import { sendEmail } from "../../../Utils/EmailSender";
 import "./styles.scss";
@@ -10,9 +17,11 @@ export function HomeBuyButton(props) {
   const user = {
     name: "Arthur",
     email: "arthur.carneirontk@gmail.com",
-    eventName
+    eventName,
   };
 
+  const [showToast, setShowToast] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [isValid, setIsValid] = useState(true);
   const [open, setOpen] = useState(false);
   const [card, setCard] = useState("");
@@ -50,8 +59,20 @@ export function HomeBuyButton(props) {
       creditCardInformation.expirationDate &&
       creditCardInformation.ownerName
     ) {
+      setIsLoading(true);
       sendEmail(user);
+      setTimeout(() => {
+        setIsLoading(false);
+        setShowToast(false);
+      }, 2000);
     }
+    setShowToast(true);
+  }
+
+  function handleCloseToast() {
+    setTimeout(() => {
+      setShowToast(false);
+    }, 1000);
   }
 
   return (
@@ -59,6 +80,31 @@ export function HomeBuyButton(props) {
       <button onClick={handleOpen} type="button" className="subscribeButton">
         Comprar Ingresso
       </button>
+      {showToast ? (
+        <Snackbar
+          style={{
+            backgroundColor: "red",
+          }}
+          anchorOrigin={{ vertical: "top", horizontal: "center" }}
+          width={400}
+          open={showToast}
+          autoHideDuration={2000}
+          onClose={handleCloseToast}
+        >
+          <Alert
+            onClose={handleCloseToast}
+            sx={{
+              width: 500,
+              backgroundColor: "#333",
+              color: "#fff",
+              textAlign: "center",
+              paddingLeft: "9rem",
+            }}
+          >
+            Ingresso enviado para o email!
+          </Alert>
+        </Snackbar>
+      ) : null}
       <MaterialModal
         open={open}
         onClose={handleClose}
@@ -129,7 +175,7 @@ export function HomeBuyButton(props) {
               />
             )}
           </InputMask>
-          {isValid ? (
+          {!isLoading ? (
             <button
               style={{ marginTop: "4rem" }}
               onClick={handleClick}
@@ -140,15 +186,10 @@ export function HomeBuyButton(props) {
             </button>
           ) : (
             <>
-              <p>Teste</p>
-              <button
-                style={{ marginTop: "4rem", border: "3px solid red" }}
-                onClick={handleClick}
-                type="button"
-                className="subscribeButton"
-              >
-                Comprar Ingresso
-              </button>
+              <CircularProgress
+                style={{ marginTop: "4rem" }}
+                color="secondary"
+              />
             </>
           )}
         </Box>
