@@ -9,7 +9,7 @@ export function HomeBuyButton(props) {
 
   const user = {
     name: "Arthur",
-    email: "arthur.menezes@a.ucb.br",
+    email: "arthur.carneirontk@gmail.com",
     eventName
   };
 
