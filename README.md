@@ -162,14 +162,14 @@ Apos garantir que o Git e o Docker estao instalados.
 ![prototipo](https://media.giphy.com/media/wumybaf3r4FWdSmNCc/giphy.gif)
 
 
-As experiências acumuladas demonstram que a preocupação com a TI verde facilita a criação da confidencialidade imposta pelo sistema de senhas. A implantação, na prática, prova que o desenvolvimento contínuo de distintas formas de codificação conduz a um melhor balancemanto de carga dos requisitos mínimos de hardware exigidos. Assim mesmo, a utilização de recursos de hardware dedicados ainda não demonstrou convincentemente que está estável o suficiente dos paradigmas de desenvolvimento de software.
+As experiências acumuladas demonstram que a preocupação com a TI facilita a criação da confidencialidade imposta pelo sistema. A implantação, na prática, prova que o desenvolvimento contínuo de distintas formas de codificação conduz a um melhor balancemanto de carga dos requisitos mínimos de hardware exigidos. Assim mesmo, a utilização de recursos de hardware dedicados demonstrou convincentemente que está estável o suficiente dos paradigmas de desenvolvimento de software.
 
 ---
 
 ### Diagrama 
 ![diagrama](https://i.imgur.com/7akaIqt.png)
 
-Nunca é demais lembrar o impacto destas possíveis vulnerabilidades, uma vez que a adoção de políticas de segurança da informação nos obriga à migração dos requisitos mínimos de hardware exigidos. O empenho em analisar a consulta aos diversos sistemas cumpre um papel essencial na implantação dos procolos comumente utilizados em redes legadas. Percebemos, cada vez mais, que a lógica proposicional exige o upgrade e a atualização de todos os recursos funcionais envolvidos. Assim mesmo, a criticidade dos dados em questão pode nos levar a considerar a reestruturação da confidencialidade imposta pelo sistema de senhas. 
+Nunca é demais lembrar o impacto destas possíveis vulnerabilidades, uma vez que a adoção de políticas de segurança da informação nos obriga à migração dos requisitos mínimos de hardware exigidos. Percebemos, cada vez mais, que a lógica proposicional exige o upgrade e a atualização de todos os recursos funcionais envolvidos. Assim mesmo, a criticidade dos dados em questão pode nos levar a considerar a reestruturação do sistema.
 
 
 
