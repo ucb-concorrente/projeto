@@ -7,7 +7,7 @@
 
   
   <p align="center">
-    Sistema de venda de ingressos de eventos de MPB -> O MELHOR
+    Sistema de venda de ingressos de eventos de MPB.
     <br />
 </div>
 
