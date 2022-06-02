@@ -29,11 +29,8 @@
       </ul>
     </li>
     <li><a href="#uso">Uso</a></li>
-    <li><a href="#roteiro">roteiro</a></li>
-    <li><a href="#contribuição">Contribuição</a></li>
     <li><a href="#licensa">Licensa</a></li>
     <li><a href="#contato">Contato</a></li>
-    <li><a href="#confirmações">Confirmações</a></li>
   </ol>
 </details>
 
@@ -49,7 +46,6 @@ Eis o porque:
 - Sistema autenticado e seguro.
 - Sistema objetivo e minimalista, a fim de trazer maior acessibilidade a todos os usuários.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Construido com
 
@@ -60,12 +56,10 @@ Principais frameworks/bibliotecas usadas para inicializar seu projeto
 - [Docker Compose](https://www.docker.com/products/docker-desktop/)
 - [Meaven](https://maven.apache.org/download.cgi/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## Começando
-
 Para podermos rodar o projeto, é necessário seguir alguns passos<br/>
 ### INSTALANDO O GIT E O DOCKER <br/>
 Docker tutorial para windows : https://docs.docker.com/desktop/windows/install/<br/>
@@ -74,9 +68,7 @@ Docker tutorial para unix : https://docs.docker.com/engine/install/ubuntu/ <br/>
  ```sh
  git clone https://github.com/ucb-concorrente/projeto.git npm install npm@latest -g
   ```
- ```sh
- git checkout -b PPC-6-criar-documentacoes-de-desenvolvimento
-  ```
+
 Caso esteja em uma distribuição baseada em Unix/Linux. Verifique se o git ja veio instalado com :
  ```sh
  git --version.
@@ -103,7 +95,8 @@ docker ps
   ```
 
 Caso retorne algo parecido com a imagem acima, significa que o projeto teve seu setup concluido com sucesso <br/>
-IMAGEM AQUI 
+
+![terminal](https://i.imgur.com/ej7Qwcu.png)
 
 
 
@@ -141,6 +134,15 @@ Para outras versoes, siga o guia oficial:
 [Git Linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ---
+### Node
+Baixar e instalar NodeJs.
+- [Download NodeJds](https://nodejs.org/en/download/)
+
+### Yarn
+Abra o terminal e rode os seguintes comandos : 
+```sh
+npm install --global yarn
+  ```
 
 ### Instalação
 
@@ -152,88 +154,35 @@ Apos garantir que o Git e o Docker estao instalados.
 3. Instalar o setup de desenvolvimento `./deploy.sh`
 4. Verifique se o docker foi iniciado com sucesso: `docker ps`.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 
 ## Uso
+### Protótipo de alta fidelidade
+![prototipo](https://media.giphy.com/media/wumybaf3r4FWdSmNCc/giphy.gif)
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+As experiências acumuladas demonstram que a preocupação com a TI verde facilita a criação da confidencialidade imposta pelo sistema de senhas. A implantação, na prática, prova que o desenvolvimento contínuo de distintas formas de codificação conduz a um melhor balancemanto de carga dos requisitos mínimos de hardware exigidos. Assim mesmo, a utilização de recursos de hardware dedicados ainda não demonstrou convincentemente que está estável o suficiente dos paradigmas de desenvolvimento de software.
+### Diagrama 
+![diagrama](https://i.imgur.com/7akaIqt.png
+)
 
-For more examples, please refer to the [Documentation](https://example.com)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roteiro
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-  - [ ] Chinese
-  - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## Contribuição
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## Licensa
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 
 ## Contato
 
-Grupo 3 programação concorrente e distribuida - 
+Grupo 3 - Programação concorrente e distribuida  
 
-Project Link: [https://github.com/ucb-concorrente/projeto](https://github.com/ucb-concorrente/projeto)
+- [GIT](https://github.com/ucb-concorrente/projeto)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+- [JIRA](https://concorrenteucb.atlassian.net/jira/software/c/projects/PPC/boards/2)
 
-<!-- ACKNOWLEDGMENTS -->
 
-## Confirmações
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-- [Malven's Grid Cheatsheet](https://grid.malven.co/)
-- [Img Shields](https://shields.io)
-- [GitHub Pages](https://pages.github.com)
-- [Font Awesome](https://fontawesome.com)
-- [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
