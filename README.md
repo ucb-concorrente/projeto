@@ -163,11 +163,14 @@ Apos garantir que o Git e o Docker estao instalados.
 ---
 
 As experiências acumuladas demonstram que a preocupação com a TI verde facilita a criação da confidencialidade imposta pelo sistema de senhas. A implantação, na prática, prova que o desenvolvimento contínuo de distintas formas de codificação conduz a um melhor balancemanto de carga dos requisitos mínimos de hardware exigidos. Assim mesmo, a utilização de recursos de hardware dedicados ainda não demonstrou convincentemente que está estável o suficiente dos paradigmas de desenvolvimento de software.
+
+---
+
 ### Diagrama 
 ![diagrama](https://i.imgur.com/7akaIqt.png
 )
 
----
+
 
 ## Licensa
 
