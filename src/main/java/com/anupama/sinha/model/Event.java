@@ -26,5 +26,6 @@ public class Event {
   private String startDate;
   private String endDate;
   private Double price;
+  private String imgUrl;
 
 }

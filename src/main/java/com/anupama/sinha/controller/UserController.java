@@ -9,6 +9,7 @@ import java.util.Optional;
 
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,11 +26,13 @@ public class UserController {
   private UserRepository userRepository;
 
   @GetMapping("/")
+  @CrossOrigin(origins = "http://localhost:8082")
   public List<User> getUsers() {
     return this.userRepository.findAll();
   }
 
   @PostMapping("/auth/{cpf}")
+  @CrossOrigin(origins = "http://localhost:8082")
   public Boolean checkAuthentication(@PathVariable("cpf") String cpf, @RequestBody Map<String, String> password) {
     Boolean isAuthenticated = false;
 
@@ -54,6 +57,7 @@ public class UserController {
   }
 
   @GetMapping("/{id}")
+  @CrossOrigin(origins = "http://localhost:8082")
   public Optional<User> getUserById(@PathVariable("id") Long id) {
     if (this.userRepository.findById(id).isPresent()) {
       return this.userRepository.findById(id);
@@ -62,12 +66,14 @@ public class UserController {
   }
 
   @PostMapping("/add")
+  @CrossOrigin(origins = "http://localhost:8082")
   public User addUser(@RequestBody User user) {
     this.userRepository.save(user);
     return user;
   }
 
   @DeleteMapping("/{id}")
+  @CrossOrigin(origins = "http://localhost:8082")
   public void deleteUser(@PathVariable("id") Long id) {
     this.userRepository.deleteById(id);
   }
