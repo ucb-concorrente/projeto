@@ -1,12 +1,3 @@
 .vscode/settings.json
-target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
-target/classes/com/anupama/sinha/repository/EmpRepository.class
-target/classes/com/anupama/sinha/model/Employee.class
-target/classes/com/anupama/sinha/dao/GenericDAO.class
-target/classes/com/anupama/sinha/dao/EntidadeBase.class
-target/classes/com/anupama/sinha/dao/ConnectionFactory.class
-target/classes/com/anupama/sinha/controller/EmpController.class
-target/classes/com/anupama/sinha/SpringMySqlApplication.class
-target/spring-mysql-application-1.0-SNAPSHOT.jar.original
-target/spring-mysql-application-1.0-SNAPSHOT.jar
 docker/spring-mysql.jar
+target/
