@@ -299,17 +299,7 @@ export function HomeContent(props) {
     api
       .get("events/")
       .then((response) => {
-        console.log("res", response.data);
-        response.data.map((data) =>
-          setItems([
-            {
-              id: data.id,
-              name: data.name,
-              valor: data.price,
-              foto: data?.imgUrl,
-            },
-          ])
-        );
+        setItems(response.data);
       })
       .catch((error) => {
         throw new Error("Error: " + error);
@@ -319,7 +309,6 @@ export function HomeContent(props) {
   console.log("Items", items);
 
   return (
-    // <h1>tese</h1>
     <div className="shows-container">
       <div className="shows">
         <Carousel className="carousel" max_width={2500}>
@@ -337,7 +326,7 @@ export function HomeContent(props) {
                     }}
                   />
                   <div className="ingressos">
-                    <h2>Valor: {item.valor}</h2>
+                    <h2>Valor: {item.price}</h2>
                   </div>
                 </div>
               </div>
