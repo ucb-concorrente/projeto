@@ -38,7 +38,7 @@
 
 ## Sobre o projeto
 
-Existem muitos ótimos modelos sistema de vendas de ingressos disponíveis na internet; no entanto, eu não encontrei um que realmente se adequava às necessidades de amantes de um genero específico, como o MPB, então nós criamos este melhorado. Nós queremos criar um modelo tão incrível que será o favorito dos amantes do MPB.
+Existem ótimos modelos de sistema de vendas de ingressos disponíveis na Internet, no entanto, eu não encontrei um que realmente se adequava às necessidades de amantes de um genero específico, como o MPB, então nós criamos uma versao para atender a essa necessidade. Nós queremos criar um modelo tão incrível que será o favorito dos amantes do MPB.
 
 Eis o porque:
 
@@ -55,12 +55,13 @@ Principais frameworks/bibliotecas usadas para inicializar seu projeto
 - [Docker](https://www.docker.com/products/docker-desktop/)
 - [Docker Compose](https://www.docker.com/products/docker-desktop/)
 - [Meaven](https://maven.apache.org/download.cgi/)
+- [ReactJS](https://pt-br.reactjs.org/)
 
 
 <!-- GETTING STARTED -->
 
 ## Começando
-Para podermos rodar o projeto, é necessário seguir alguns passos<br/>
+Para podermos rodar o projeto, é necessário seguir os passos abaixo<br/>
 ### INSTALANDO O GIT E O DOCKER <br/>
 Docker tutorial para windows : https://docs.docker.com/desktop/windows/install/<br/>
 Docker tutorial para unix : https://docs.docker.com/engine/install/ubuntu/ <br/>
@@ -135,8 +136,8 @@ Para outras versoes, siga o guia oficial:
 
 ---
 ### Node
-Baixar e instalar NodeJs.
-- [Download NodeJds](https://nodejs.org/en/download/)
+Baixar e instalar NodeJS.
+- [Download NodeJS](https://nodejs.org/en/download/)
 
 ### Yarn
 Abra o terminal e rode os seguintes comandos : 
