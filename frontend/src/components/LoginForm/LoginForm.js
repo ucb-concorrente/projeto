@@ -1,20 +1,34 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import InputMask from "react-input-mask";
 import { Button, TextField, Box } from "@mui/material";
 import "./styles.scss";
+import { Redirect } from "react-router-dom";
+
+import { Context } from "../../Context/AuthContext";
 
 export function LoginForm() {
   const [cpf, setCpf] = useState("");
   const [password, setPassword] = useState("");
 
-  function handleClick() {
-    const user = {
-      cpf,
-      password,
-    };
+  const user = {
+    cpf,
+    password,
+  };
 
-    console.log("user", user);
+  function click() {
+    const result = handleClick(user);
+
+    console.log("result", result);
+
+    if (result) {
+      console.log("entrou", result);
+
+      window.location.href = "/";
+    }
   }
+
+  const { handleClick, authenticated } = useContext(Context);
+  console.log(authenticated);
   return (
     <div className="loginForm-container">
       <h2>Login</h2>
@@ -37,7 +51,7 @@ export function LoginForm() {
           type="password"
           autoComplete="current-password"
         />
-        <Button onClick={handleClick} size="large" variant="contained">
+        <Button onClick={click} size="large" variant="contained">
           Login
         </Button>
       </Box>

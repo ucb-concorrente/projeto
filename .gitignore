@@ -1,1 +1,3 @@
 .vscode/settings.json
+docker/spring-mysql.jar
+target/
