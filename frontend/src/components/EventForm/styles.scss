@@ -1,0 +1,58 @@
+div.container-event{
+    border: none;
+    box-shadow: 1px 2px 18px 5px;
+    margin: 1.7rem auto;
+    height: 22rem;
+    width: 32rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#faf6f4;
+    flex-direction: column;
+    
+    input{
+        height: 2rem;
+        width: 29rem;
+        font-size: 1rem;
+        color : rgb(34, 33, 33);
+    }
+
+
+
+    .columns{
+        display: flex;
+        justify-content: space-between;
+        width: 465px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        input{
+            width: 13.6rem;
+            display: flex;
+        }
+        .column-1{
+            display: flex;
+            flex-direction: column;
+            
+          
+        }
+    
+        .colum-2{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+button {
+    height: 3rem;
+    width: 8rem;
+    background-color: #e59500;
+    border: none;
+    box-shadow: -1px 3px 20px 0px;
+    margin-top: 2rem;
+}
+
+
+.banner{
+    text-align: center;
+}
