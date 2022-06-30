@@ -1,10 +1,5 @@
 package com.anupama.sinha.model;
-
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
-
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,6 +12,10 @@ import lombok.Setter;
 @Entity
 @Table
 public class Profile_user {
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private Long id;
   @OneToOne
   @JoinColumn(name = "id_profile", referencedColumnName = "id")
   private Profile profile;
