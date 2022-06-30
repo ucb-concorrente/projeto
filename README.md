@@ -171,7 +171,7 @@ As experiências acumuladas demonstram que a preocupação com a TI facilita a c
 #### Diagrama de sequência
 ![diagramaSequencia](https://i.imgur.com/7akaIqt.png)
 #### MER
-![MER](https://imgur.com/6vQDdhE)
+![MER](https://i.imgur.com/aCMkDMd.png)
 
 Nunca é demais lembrar o impacto destas possíveis vulnerabilidades, uma vez que a adoção de políticas de segurança da informação nos obriga à migração dos requisitos mínimos de hardware exigidos. Percebemos, cada vez mais, que a lógica proposicional exige o upgrade e a atualização de todos os recursos funcionais envolvidos. Assim mesmo, a criticidade dos dados em questão pode nos levar a considerar a reestruturação do sistema.
 
