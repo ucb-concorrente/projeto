@@ -1,127 +1,91 @@
 import { useState } from "react";
-import InputMask from "react-input-mask";
-import { toast, ToastContainer } from "react-toastify";
+import api from "../../services/api";
 import "./styles.scss";
-import Spinner from "../../assets/spinner.svg";
-import Violao from "../../assets/violao.png";
+import InputMask from "react-input-mask";
 
 export function Form() {
-  const [form, setForm] = useState({
-    nome: "",
-    email: "",
-    endereco: "",
-    cpf: "",
-    numero: "",
-    data_nasc: "",
-  });
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [endereco, setEdereco] = useState("");
+  const [cpf, setCpf] = useState("");
+  const [numero, setNumero] = useState("");
+  const [dataNasci, setDataNasci] = useState("");
 
-  const [loading, setLoading] = useState(false);
-
-  function onFormChange(event) {
-    const { value, name } = event.target;
-    setForm((f) => ({
-      ...f,
-      [name]: value,
-    }));
+  function handleSubmit(c) {
+    c.preventDefault();
+    const cadastre = {
+      name: nome,
+      price: email,
+      dataNasci,
+      endereco,
+      cpf,
+      numero,
+    };
+    console.log(cadastre);
+    api
+      .post("cadastre/add/", cadastre)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        throw new Error(error);
+      });
   }
-
-  function validForm() {
-    const validEmailRegex =
-      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    return (
-      form.nome &&
-      form.cpf.length === 14 &&
-      form.data_nasc.length === 10 &&
-      Boolean(form.email.match(validEmailRegex)) &&
-      form.numero.length === 16 &&
-      form.endereco
-    );
-  }
-
-  function handleCadastre() {
-    setLoading(true);
-    if (!validForm()) {
-      toast.error("Verifique os campos digitados!");
-      setLoading(false);
-    } else {
-      setTimeout(() => {
-        toast.success("Cadastro realizado com sucesso!");
-        setLoading(false);
-      }, 5000);
-    }
-  }
-
   return (
-    <div className="container-signup">
-      <form className="form">
-        <input
-          placeholder="Nome"
-          name="nome"
-          value={form.nome}
-          onChange={onFormChange}
-        />
-
-        <input
-          placeholder="Email"
-          name="email"
-          value={form.email}
-          onChange={onFormChange}
-        />
-
-        <input
-          placeholder="Endereco"
-          name="endereco"
-          value={form.endereco}
-          onChange={onFormChange}
-        />
-
-        <InputMask
-          mask={"999.999.999-99"}
-          value={form.cpf}
-          onChange={onFormChange}
+    <div className="container-SingUp">
+      <form onSubmit={(cadastre) => handleSubmit(cadastre)}>
+        <div className="columns">
+          <div className="column-1">
+              <input
+                placeholder="Nome" 
+                type="text"
+                name="nome"
+                value={nome}
+                onChange={(nome) => setNome(nome.target.value)}
+              />
+              <input
+                placeholder="Endereço" 
+                type="text"
+                name="endereco"
+                value={endereco}
+                onChange={(endereco) => setEdereco(endereco.target.value)}
+              />
+               <InputMask
+                mask="999.999.999-99"
+                value={cpf}
+                onChange={(event) => setCpf(event.target.value)}
+                disabled={false}
+                maskChar=" "
         >
-          {() => <input placeholder="CPF" name="cpf" />}
+          {() => <input placeholder="CPF" type="text" />}
         </InputMask>
-
-        <InputMask
-          mask={"(99) 9 9999-9999"}
-          value={form.numero}
-          onChange={onFormChange}
-        >
-          {() => <input placeholder="numero" name="numero" />}
-        </InputMask>
-
-        <InputMask
-          mask={"99/99/9999"}
-          value={form.data_nasc}
-          onChange={onFormChange}
-        >
-          {() => <input placeholder="Data de Nascimento" name="data_nasc" />}
-        </InputMask>
-        <img alt="violao" id="violao" src={Violao} />
+          </div>
+          <div className="colum-2">
+              <input
+                placeholder="email"                  
+                type="text"
+                name="email"
+                value={email}
+                onChange={(email) => setEmail(email.target.value)}
+              />
+            
+              <InputMask mask="99-99-9999" defaultValue="30-06-2022"
+              placeholder="data de nascimento" 
+              type="text"
+              name="dataNasci"
+              value={dataNasci}
+              onChange={(dataNasci) => setDataNasci(dataNasci.target.value)} />
+             
+              <InputMask mask="+55\ 99 99999-9999" maskChar={null}
+              placeholder="Numero de telefone" 
+              type="text"
+              name="numero"
+              value={numero}
+              onChange={(numero) => setNumero(numero.target.value)} />
+          </div>
+        </div>
       </form>
-      <div style={{ margin: "80px 0 59px 120px" }}>
-        <button
-          onClick={handleCadastre}
-          disabled={loading}
-          style={{ cursor: loading ? "default" : "pointer" }}
-          className="cadastre-btn"
-        >
-          {loading ? <img alt="Loading spinner" src={Spinner} /> : "Cadastrar"}
-        </button>
-        <ToastContainer
-          position="top-center"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          pauseOnHover
-        />
-      </div>
-
-      <footer className="footer"></footer>
+        <button type="submit"><b>Cadastrar</b></button>
     </div>
   );
 }
