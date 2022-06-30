@@ -21,7 +21,6 @@ export function LoginForm() {
 
     if (result) {
       console.log("entrou", result);
-
       window.location.href = "/";
     }
   }

@@ -20,20 +20,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "/users")
+@CrossOrigin(origins = "*")
 public class UserController {
 
   @Autowired
   private UserRepository userRepository;
 
   @GetMapping("/")
-  @CrossOrigin(origins = "http://localhost:8082")
   public List<User> getUsers() {
     return this.userRepository.findAll();
   }
 
   @PostMapping("/auth/{cpf}")
-  @CrossOrigin(origins = "http://localhost:8082")
   public Boolean checkAuthentication(@PathVariable("cpf") String cpf, @RequestBody Map<String, String> password) {
+    System.out.println("cpf" + cpf);
     Boolean isAuthenticated = false;
 
     List<User> users = this.userRepository.findAll();
@@ -57,7 +57,6 @@ public class UserController {
   }
 
   @GetMapping("/{id}")
-  @CrossOrigin(origins = "http://localhost:8082")
   public Optional<User> getUserById(@PathVariable("id") Long id) {
     if (this.userRepository.findById(id).isPresent()) {
       return this.userRepository.findById(id);
@@ -66,14 +65,12 @@ public class UserController {
   }
 
   @PostMapping("/add")
-  @CrossOrigin(origins = "http://localhost:8082")
   public User addUser(@RequestBody User user) {
     this.userRepository.save(user);
     return user;
   }
 
   @DeleteMapping("/{id}")
-  @CrossOrigin(origins = "http://localhost:8082")
   public void deleteUser(@PathVariable("id") Long id) {
     this.userRepository.deleteById(id);
   }
