@@ -316,7 +316,7 @@ export function HomeContent(props) {
             <div className="showItem-container">
               <div className="show-item">
                 <div key={item.id} className="item">
-                  {/* <img src={item.foto?.link} alt={item.foto?.alt} /> */}
+                  <img src={item.imgUrl} alt={"Foto evento"} />
 
                   <h1 key={item.name}>{item.name}</h1>
                   <hr
@@ -326,14 +326,18 @@ export function HomeContent(props) {
                     }}
                   />
                   <div className="ingressos">
-                    <h2>Valor: {item.price}</h2>
+                    <h2 key={item.id}>Valor: {item.price}</h2>
                   </div>
+                  <div className="datas">
+                    <h2>De: {item.startDate}</h2>
+                    <h2>A: {item.endDate}</h2>
+                  </div>
+                  <h4 key={item.id}>
+                    Artista: <b>{item.artist}</b>
+                  </h4>
                 </div>
               </div>
-              <HomeBuyButton
-                eventName={item.name}
-                eventPicture={item.foto?.link}
-              />
+              <HomeBuyButton eventName={item.name} eventPicture={item.imgUrl} />
             </div>
           ))}
         </Carousel>

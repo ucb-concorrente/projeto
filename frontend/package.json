@@ -20,7 +20,7 @@
     "react-router-dom": "^5.1.1",
     "react-scripts": "5.0.1",
     "react-svg": "^15.0.1",
-    "react-toastify": "^9.0.1",
+    "react-toastify": "^9.0.5",
     "sass": "^1.52.1",
     "web-vitals": "^2.1.0"
   },
