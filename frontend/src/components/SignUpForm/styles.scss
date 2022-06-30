@@ -17,6 +17,11 @@ div.container-SingUp{
         color : rgb(34, 33, 33);
     }
 
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 
     .columns{

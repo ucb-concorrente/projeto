@@ -6,10 +6,11 @@ import { Context } from "../Context/AuthContext";
 
 export function Event() {
   const { authenticated } = useContext(Context);
+  const localStorageRes = localStorage.getItem("isAuthenticated");
 
   return (
     <>
-      {authenticated === true ? (
+      {authenticated === true || Boolean(localStorageRes) === true ? (
         <>
           <HomeHeader title="Cadastro de eventos" />
           <Form />

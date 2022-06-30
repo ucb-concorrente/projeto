@@ -5,6 +5,7 @@ const Context = React.createContext();
 
 function AuthProvider({ children }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [user, setUser] = useState({});
 
   useEffect(() => {
     const result = localStorage.getItem("isAuthenticated");
@@ -15,12 +16,12 @@ function AuthProvider({ children }) {
   }, []);
 
   function handleClick(user) {
+    setUser(user);
     const { cpf } = user;
 
     api
       .post(`users/auth/${cpf}`, user)
       .then((response) => {
-        console.log(response);
         if (response.data) {
           setIsAuthenticated(true);
           localStorage.setItem("isAuthenticated", true);
@@ -41,7 +42,9 @@ function AuthProvider({ children }) {
     return false;
   }
   return (
-    <Context.Provider value={{ authenticated: isAuthenticated, handleClick }}>
+    <Context.Provider
+      value={{ authenticated: isAuthenticated, handleClick, user }}
+    >
       {children}
     </Context.Provider>
   );

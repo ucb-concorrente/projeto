@@ -30,7 +30,7 @@ export function Form() {
       api
         .post("events/add/", event)
         .then((response) => {
-          console.log(response);
+          window.location.href = "/";
         })
         .catch((error) => {
           throw new Error(error);
