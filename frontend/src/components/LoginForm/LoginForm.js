@@ -2,7 +2,6 @@ import { useContext, useState } from "react";
 import InputMask from "react-input-mask";
 import { Button, TextField, Box } from "@mui/material";
 import "./styles.scss";
-import { Redirect } from "react-router-dom";
 
 import { Context } from "../../Context/AuthContext";
 

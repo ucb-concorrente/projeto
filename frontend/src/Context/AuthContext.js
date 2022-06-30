@@ -1,6 +1,5 @@
 // import history from "../utils/history";
 import React, { useState } from "react";
-import { Redirect } from "react-router-dom";
 import api from "../services/api";
 const Context = React.createContext();
 
@@ -15,6 +14,8 @@ function AuthProvider({ children }) {
         console.log(response);
         if (response.data) {
           setIsAuthenticated(true);
+        } else {
+          setIsAuthenticated(false);
         }
       })
       .catch((error) => {
