@@ -8,7 +8,3 @@ export function Home() {
     </>
   );
 }
-
-
-
-
