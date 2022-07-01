@@ -53,7 +53,7 @@ Principais frameworks/bibliotecas usadas para inicializar seu projeto
 
 - [Java](https://www.java.com/pt-BR/download/)
 - [Docker](https://www.docker.com/products/docker-desktop/)
-- [Docker Compose](https://www.docker.com/products/docker-desktop/)
+- [Springboot](https://spring.io/projects/spring-boot)
 - [Meaven](https://maven.apache.org/download.cgi/)
 - [ReactJS](https://pt-br.reactjs.org/)
 
@@ -168,7 +168,7 @@ As experiências acumuladas demonstram que a preocupação com a TI facilita a c
 ---
 
 ### Diagramas 
-#### Diagrama de sequência
+#### fluxograma 
 ![diagramaSequencia](https://i.imgur.com/7akaIqt.png)
 #### MER
 ![MER](https://i.imgur.com/aCMkDMd.png)
