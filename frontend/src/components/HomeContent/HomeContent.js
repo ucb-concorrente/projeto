@@ -299,6 +299,7 @@ export function HomeContent(props) {
     api
       .get("events/")
       .then((response) => {
+        console.log("response", response);
         setItems(response.data);
       })
       .catch((error) => {
@@ -312,7 +313,7 @@ export function HomeContent(props) {
     <div className="shows-container">
       <div className="shows">
         <Carousel className="carousel" max_width={2500}>
-          {items.map((item) => (
+          {items && items.map((item) => (
             <div className="showItem-container">
               <div className="show-item">
                 <div key={item.id} className="item">
