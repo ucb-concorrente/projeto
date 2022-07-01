@@ -7,7 +7,11 @@
 
   
   <p align="center">
-    Sistema de venda de ingressos de eventos de MPB.
+    Sistema de venda de ingressos de eventos de MPB. feito por 
+    Arthur Carneiro 
+    Douglas Nadim 
+    Guilherme Paes 
+    Mateus Colares
     <br />
 </div>
 
