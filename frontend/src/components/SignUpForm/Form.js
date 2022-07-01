@@ -63,7 +63,7 @@ export function Form() {
           </div>
           <div className="colum-2">
             <input
-              placeholder="email"
+              placeholder="Email"
               type="text"
               name="email"
               value={email}
@@ -73,7 +73,7 @@ export function Form() {
             <InputMask
               mask="99-99-9999"
               defaultValue="30-06-2022"
-              placeholder="data de nascimento"
+              placeholder="Data de Nascimento"
               type="text"
               name="dataNasci"
               value={dataNasci}
